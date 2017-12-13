@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<body>
+    
+
+<!-- Put js between script tags to see implemeted in Preview mode -->
+<script>
+
+/*   declares the function (function is a keyword/command)
+    declares the name/object (animal)
+    declares the object properties/parameters/values (name, eyes, etc.)
+*/
+function animal(name,eyes,ears,nose,legs,fur)  {
+    /* section that passes in the values for the properties) */
+    this.name = name;
+    this.eyes = eyes;
+    this.ears = ears;
+    this.nose = nose;
+    this.legs = legs;
+    this.fur = fur;
+
+ /* section that accesses the info
+    and br in for spacing to it doesn't run together */
+    document.write("<br><br>Species: " +this.name);
+    document.write("<br>Eyes: " +this.eyes);
+    document.write("<br>Ears: " +this.nose);
+    document.write("<br>Nose: " +this.nose);
+    document.write("<br>Legs: " +this.legs);
+    document.write("<br>Fur: " +this.fur);
+};
+
+
+/*    This creates the instance   */
+var zebra = new animal("Zebra",2,2,1,4,true);
+var snake = new animal("Snake",2,0,1,0,false);
+
+
+</script>
+
+
+</body>
+</html>

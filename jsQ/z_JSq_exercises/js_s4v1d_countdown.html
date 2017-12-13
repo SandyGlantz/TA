@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>   
+<!-- inline CSS via style tag -->
+<style>  
+    button{font-size: 1.5em; font-weight: bold; height:75px; width:100px;}
+</style>
+</head>
+
+
+<body>
+   <h1 id="countdown">Click to start countdown</h1> 
+    <br><br>
+
+    <!-- created class, event, and called var (up)-->
+    <button class="btn" onclick="up()">Start!</button>
+
+<!-- inline javascript via script tag -->
+<script>
+
+    //"normalizing" variable by starting it at zero
+var i=0;
+var myArray = [10, 9, 8, 7, 6, 5, 4, 3, 2, 1, "WooHoo!!!!"];
+
+// to use the above array it needs to be iterated:
+function up()  {
+    if (i < myArray.length)  {
+        document.getElementById('countdown').style.color = "red";
+                    // innerHTML puts in the data from the array
+        document.getElementById('countdown').innerHTML = myArray[i];
+        // i++ means it (i) increments by 1 each time
+        i++;
+    }
+    window.setTimeout(up, 500);
+
+};
+
+</script>
+</body>
+</html>

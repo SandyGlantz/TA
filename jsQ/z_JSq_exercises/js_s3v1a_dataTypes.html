@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<body>
+    
+
+<!-- Put js between script tags to see implemeted in Preview mode -->
+<script>
+
+/*   Data Type examples   */
+
+        
+         function myFunction() {
+              var num1 = 2;
+              var num2 = 12;
+              var equality = (num1 == "2");
+              var strict = (num1 === "2");
+              document.write("Equality: " +equality+ "<br>");
+              document.write("Strict: " +strict+ "<br><br>");
+        
+        
+              document.write("Data type: " +typeof num1);
+              document.write("<br>Data type: " +typeof "2");
+        
+              var test = isNaN(num2);
+              /*substituted docwrite for console.log and added br */
+              document.write("<br>isNaN(num2): " + test);
+              var words = "words";
+        
+              var array = [1, 2, 3, 4, 5]
+              document.write("<br>Data type: " + typeof array);
+        
+              var test2 = isNaN(words);
+              /*substituted docwrite for console.log and added br */
+              document.write("<br>isNaN(test2) " +test2);
+              var results = num1 + num2;
+              document.write(num1 + " + " + num2 + " = " +results);
+            };
+           
+           myFunction()
+        
+
+</script>
+
+
+</body>
+</html>
+

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<body>
+    
+
+<!-- Put js between script tags to see implemeted in Preview mode -->
+<script>
+
+/*    This declares the function and creates the object(s)   */
+function myFunction(make, model)  {
+    this.make = make;
+    this.model = model;
+    document.write(this.make + " : " + this.model);
+}
+
+/*    This instantiates ... there are 2 instantiations 
+    !!! NOTE: this puts everything in one line, so the end of the first instance has no space before the second instance begins  */
+var myCar1 = new myFunction("Ford", "Mustang");
+var myCar2 = new myFunction("Ford", "F150");
+
+
+</script>
+
+
+</body>
+</html>

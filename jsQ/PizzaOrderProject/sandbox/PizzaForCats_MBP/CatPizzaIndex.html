@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">    
+        <title>Pizza for Cats</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+         
+<!-- SEO is our friend (as a portfolio item) instead of actual business data of cat pizzas ;-)-->
+        <meta name="description"  content="Tech Academy projects">
+        <meta name="keywords"  content="JavaScript, CSS, HTML, Portfolio, Project">  
+        <meta name="author"  content="Sandy Glantz">   
+
+         <link rel="stylesheet" href="./css/catPizza.css">
+         <link rel="stylesheet" href="./css/w3.css"> <!-- removing this line doesn't change anything because flex part is already in css -->
+        <script type="text/Javascript" src="catPizza.js"> </script>
+                    
+        <style>
+            /* for inline CSS, if not linked in head to stylesheet(s) */
+
+
+/* ========== Nav Bar ========= */
+ul.navU   {
+list-style-type: none;
+margin: 0;
+padding: 0;
+padding-left: 0px;  /* adds padding to the left of the nav list */
+overflow: hidden;
+opacity: .85;
+background-color: black;
+
+ /* Fixes navbar to top: */
+position: fixed;
+top: 0;
+width: 100%;
+    }
+ 
+
+    
+li.navL   {
+float: left;
+border-right: 2px solid #bbb;   /* Creates line between items */   
+border-bottom: 1px solid #bbb; /* Shows line between items when mobile/small screen stacked */   
+   }
+                
+li.navL a   {
+display: block;
+color: white;
+text-align: center;
+padding: 16px 16px;
+text-decoration: none;
+    }
+
+  /* Creates highlighted section of nav as mouse touches */             
+li.navL a:hover  {
+background-color: #0A49F7;
+    }
+
+ /* Horizontal stacks of menu on small screen */   
+@media screen and (max-width: 600px){
+    ul.navU li.right, 
+    ul.navU li {float: none;}
+}
+
+
+
+
+
+        </style>
+
+    </head>
+
+<body>
+  
+
+<!-- Navbar -->
+<div class="navD" id="navID">
+<nav>                
+<ul class="navU">
+
+<li class="navL"><a href="#home">  &nbsp Home</a></li>
+<li class="navL"><a href="#news">  Customers  </a></li>
+<li class="navL"><a href="#order"> -- ORDER HERE -- </a></li>
+<li class="navL"><a href="#about">About Us</a></li>
+
+</ul>               
+</nav>
+
+</div>
+      
+<!-- ORDER SECTION -->
+<div class="order">
+        <div id="orderhead">
+            <h1>ORDER HERE</h1>
+        </div>
+        
+
+
+
+<div  class="flex-container">
+<div class="flex-item">
+<div class="RadioButtonGroup">
+    <h3>Size edit:</h3>
+    <input class="RadioButton" type="radio" name="Size" value="Personal Pizza"> Personal Pizza<br>
+    <input class="RadioButton" type="radio" name="Size" value="Medium Pizza"> Medium Pizza<br>
+    <input class="RadioButton" type="radio" name="Size" value="Large Pizza" checked> Large Pizza<br>
+    <input class="RadioButton" type="radio" name="Size" value="Extra Large Pizza"> Extra Large Pizza testing for width<br>
+</div>
+</div>
+
+
+    
+
+<div class="flex-item">
+<div class="RadioButtonGroup">
+ <h3>Sauce:</h3>
+<input class="RadioButton" type="radio" name="Size" value="Personal Pizza"> sauce yes <br>
+ <input class="RadioButton" type="radio" name="Size" value="Medium Pizza"> Sauce no<br>
+<input class="RadioButton" type="radio" name="Size" value="Large Pizza" checked> sauce Pizza<br>
+<input class="RadioButton" type="radio" name="Size" value="Extra Large Pizza"> Extra Sauce Pizza testing for width<br>
+        </div>
+          </div>
+        
+
+          
+<div class="flex-item">
+ <div class="RadioButtonGroup">
+    <h3>Cheese:</h3>
+<input class="RadioButton" type="radio" name="Size" value="Personal Pizza"> Personal Cheese<br>
+                    <input class="RadioButton" type="radio" name="Size" value="Medium Pizza"> Medium Cheese<br>
+<input class="RadioButton" type="radio" name="Size" value="Large Pizza" checked> Large Cheese<br>
+                    <input class="RadioButton" type="radio" name="Size" value="Extra Large Pizza"> Extra Large Cheese testing for width and testing it even more to see how far the box will go<br>
+                </div>
+                  </div>
+                </div>
+                
+                        
+
+
+
+
+                
+
+<!--  ===== jQuery first, then Tether, then Bootstrap JS.  =====  -->
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n"
+        crossorigin="anonymous"></script>
+
+<script src="css/pizza-menu.js"></script>
+
+
+
+</body>
+</html>

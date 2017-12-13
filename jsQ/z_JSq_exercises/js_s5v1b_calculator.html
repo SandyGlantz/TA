@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+    <head>
+            <br><br>
+        <!-- inline CSS of "calculator" shape -->
+        <style>
+        .frame1  {
+            margin: 0 auto;
+            text-align: center;
+            height: 265px;
+            width: 200px;
+            border: 8px solid black;
+            border-radius: 5%;
+            box-shadow: 10px 10px 30px grey;
+        }
+        #total  {
+            text-align: right;
+            margin: 4% 8%;
+            background-color: lightgrey;
+            border: 2px solid black;
+            border-radius: 5%;
+        }
+        button  {
+            color: grey;
+            margin: 2% 1px;
+            height: 35px;
+            width: 80px;
+        }
+        button:hover  {
+            color:black;
+            font-weight: bold;
+            border: 2px solid #000;
+        }
+        input:hover  {
+            color: blue;
+            font-weight: bold;
+            border: 2px solid #000;
+        }
+        </style>
+    </head>
+
+
+<body>
+    <div class="frame1">
+        <h1 id="total">0.00</h1>
+        <br>
+
+        <!-- the &nbsp put space between the number and the entry/input box -->
+        Number 1: &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp <input type="text" id="txt1" size="4">
+             <br><br>
+        Number 2: &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp <input type="text" id="txt2" size="4">
+            <br><br><br>
+
+        <!--   radio array - radio allows for only one selection at a time
+                "checked" creates the default selection (of buttons)   -->
+        <input type="radio" name="calc" value="*" checked>  *</input> &nbsp &nbsp
+        <input type="radio" name="calc" value="/">  /</input> &nbsp &nbsp
+        <input type="radio" name="calc" value="+">  +</input> &nbsp &nbsp
+        <input type="radio" name="calc" value="-">  -</input>
+            <br><br>
+        <button type="button" onclick="Calc();">Calculate</button>
+        <button type="button" onclick="Clear();">Clear</button>        
+        
+    </div>
+
+
+<script>
+
+// variables:
+var txt1 = document.getElementById("txt1");
+var txt2 = document.getElementById("txt2");
+var total = document.getElementById("total");
+
+function Calc()  {
+    // remember to not use double quotes in same line of function - split with " and '
+    // querySelector is a method ... as is querySelectorAll
+    var result = document.querySelector("input[name='calc']:checked").value;
+
+
+    // parseInt takes (text string) value and converts from text to integer
+    var num1 = parseInt(txt1.value); console.log(typeof num1); console.log(isNaN(num1));
+    var num2 = parseInt(txt2.value); console.log(typeof num2); console.log(isNaN(num2));  
+
+    if (result == "*")  {
+                    total.innerHTML = (num1 * num2).toFixed(2);  
+                    // toFixed (level) takes output to tenths place (at 2)
+    }       else if (result == "/")  {
+                     total.innerHTML = (num1 / num2).toFixed(2);       
+    }       else if (result == "+")  {
+                     total.innerHTML = (num1 + num2).toFixed(2);       
+    }       else if (result == "-")  {
+                     total.innerHTML = (num1 - num2).toFixed(2);       
+    };
+};
+
+function Clear()  {
+    txt1.value=" ";
+    txt2.value=" ";
+    total.innerHTML="0.00";
+};
+
+</script>
+
+
+</body>
+</html>

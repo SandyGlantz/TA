@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="UTF-8">
+<title>Fieldset3</title>
+<link href='https://fonts.googleapis.com/css?family=Alegreya+Sans:300,400|Source+Sans+Pro:400,300' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+</head>
+
+<body>
+    <br>
+    <br>
+    <br>
+
+<style>
+/* need to add web-kit, moz- and ms in future upgrades */
+
+
+body {
+    font-family: 'Alegreya Sans', sans-serif;
+    background-color: #e6e6e6;
+}
+
+footer {
+    font-family: 'Alegreya Sans', sans-serif;
+    color: darkblue;
+    background-color: white;
+    font-size: 1em;
+    text-align: center;
+}
+
+.well {
+    /* position: relative; removing doesn't change anything */
+    display: block;
+    overflow: hidden;
+    background-color: pink;  /* was #e6e6e6 */
+    margin: auto; /*was 0px */
+    padding: auto; /* was 15px*/
+    justify-content: space-around;
+}
+
+fieldset {
+    display: block;
+    margin: 25px; /*was 50px 50px 50px 50px */
+    float: center; 
+    line-height: 2.25em; /* leading */
+    background-color: lightgreen; /*was white */
+    font-family: 'Alegreya Sans', sans-serif;
+    border: .5px solid lightgray;
+    padding: 10px;
+    border-radius: 10px;
+    justify-content: space-around;
+
+}
+  
+fieldset .categoryColor {
+    display: block;
+    background-color: azure;
+    padding: 25px 15px 25px 25px;
+    border-left-color: darkblue;    /* #25a9fe opt to match FF button*/
+    border-left-width: 1em;
+    width: 170px;
+  height: 330px;
+  margin: 10px;
+  font: bold;
+float: left;
+color: #222121;
+}
+
+fieldset legend  {
+    background-color: darkblue;
+    padding: 5px 10px;
+    font-size: 1.25em;
+    border-radius: 5px;
+    margin-left: 0px;
+  color: white;
+}
+
+input  {
+    vertical-align: -3px; /* crooked button to text all browsers with default and center */
+    margin-right: 6px; /* puts space between button and text */
+}
+
+
+
+
+input[type="radio"]  {
+width: 20px;
+height: 20px;
+}
+
+input[type="checkbox"]  {
+width: 20px;
+height: 20px;
+}
+
+/*  designer radios - need boxes too before use */
+/*
+input[type='radio']:after {
+        width: 17px;
+        height: 17px;
+        border-radius: 20px;
+        top: -7px;
+        left: -5px;
+        position: relative;
+        background-color: white;
+        content: '';
+        display: block;
+        visibility: visible;
+        border: 2px solid blue;
+    }
+
+    input[type='radio']:checked:after {
+        width: 17px;
+        height: 17px;
+        border-radius: 20px;
+        top: -7px;
+        left: -5px;
+        position: relative;
+        background-color: darkblue;
+        content: '';
+        display: block;
+        visibility: visible;
+        border: 2px solid blue;
+    }
+*/
+
+#orderHere {
+    text-align: center;
+    color: darkblue;
+    font-size: 2.5em;
+}
+
+header  {
+    text-align: center;
+    background-color: #e6e6e6;
+    color: darkblue;
+    font-size: 3em;
+}
+
+.italicsInfo {
+    font-style: italic;
+    text-align: center;
+margin-left: 50px;
+    margin-right: 50px;
+}
+
+.Receipt  {
+   background-color: azure;
+    padding: 25px 15px 25px 25px;
+    border-left-color: darkblue;    /* #25a9fe opt to match FF button*/
+    border-left-width: .75em;
+    width: auto;
+  height: auto;
+  margin: 10px;
+text-align: center;
+float: center;
+color: #222121;
+
+}
+
+
+</style>
+
+
+<header>Pizza For Cats</header>
+
+ <h1 id="orderHere">ORDER HERE</h1>
+ <HR color="darkblue" width="60%">
+    <p class="italicsInfo">Information about how to pick your pizza, how much the pizza and extra meats cost - maybe a disclainer note about Kitty Coma Syndrom, etc. </p>
+ <br>
+
+<!-- Outside form and fieldset align individual fieldsets to be responsive -->
+<form class="well">
+<fieldset>
+
+
+
+
+<!-- Future upgrade: bring over custom radio button effect from flexbox menu in earlier version -->
+
+
+
+<!-- Pizza size selection -->
+<fieldset class="categoryColor">
+<legend>Pizza Size</legend>
+
+
+<label class="tbd">
+<input class="sizes" type="radio" name="size" value="Snack Size" /> Kitten
+</label><br>
+
+<label class="tbd">
+<input class="sizes" type="radio" name="size" value="Individual Size" checked="checked"/> 1 Cat
+</label><br>
+
+<label class="tbd">
+<input class="sizes" type="radio" name="size" value="Dinner Size"/> 2-3 Cats
+</label><br>
+
+<label class="tbd">
+<input class="sizes" type="radio" name="size" value="Cat Coma Size"/> Party Size*
+</label><br>
+
+<label class="tbd">
+<input class="sizes" type="radio" name="size" value="Cat Shape Size"/> Custom Shape
+</label>
+
+</fieldset>    
+
+
+
+<!-- Pizza crust selection -->
+<fieldset class="categoryColor">
+<legend>Crust Type</legend>
+
+        <label class="tbd">
+        <input class="crusts" type="radio" name="crust" value="No Gluten Crust"/> Gluten free
+        </label><br>
+        
+        <label class="tbd">
+        <input class="crusts" type="radio" name="crust" value="Cheese Crust" checked="checked"/> Baked Cheese
+        </label><br>
+        
+        <label class="tbd">
+        <input class="crusts" type="radio" name="crust" value="Salmon Skin Crust"/> Salmon Skin (+$3.00)
+        </label><br>
+        
+        <label class="tbd">
+        <input class="crusts" type="radio" name="crust" value="Thin Crust"/> Extra Thin
+        </label><br>
+        
+        <label class="tbd">
+        <input class="crusts" type="radio" name="crust" value="Chewer Crust"/> Regular Crust
+      </label>
+</fieldset>
+
+
+
+
+
+<!-- Sauce selection -->
+<fieldset class="categoryColor">
+<legend>Sauce Choice</legend>
+
+<label class="tbd">
+<input class="sauces" type="radio" name="sauce" value="Mouse Mousse"/> Mouse Mousse
+</label><br>
+
+<label class="tbd">
+<input class="sauces" type="radio" name="sauce" value="Cream Sauce" checked="checked"/> Dairy-free Cream Sauce
+</label><br>
+
+<label class="tbd">
+<input class="saucse" type="radio" name="sauce" value="No Sauce"/> No Sauce
+</label>
+</fieldset>    
+    
+
+
+
+<!-- Cheese selection -->
+<fieldset class="categoryColor">
+        <legend>Cheese Options</legend>
+        
+        <label class="tbd">
+        <input class="cheeses" type="radio" name="cheese" value="Regular"/> Regular Cheese
+        </label> 
+        <br>   
+        
+        <label class="tbd">
+        <input class="cheeses" type="radio" name="cheese" value="Cheez"/> Dairy-free Cheez
+        </label> 
+        <br>
+        
+        <label class="tbd">
+        <input class="cheeses" type="radio" name="cheese" value="Dbl Cheese"/> Double Cheese (+$3)
+        </label> 
+        </fieldset>    
+        
+
+
+
+
+<!-- Meat options -->
+<fieldset class="categoryColor">
+<legend>Meats</legend>
+                
+<label class="tbd">
+        <input class="meats" type="checkbox" name="meat"  value="Canadian Bacon"/> Canadian Bacon
+        </label><br>
+        
+        <label class="tbd">
+        <input class="meats" type="checkbox" name="meat"  value="Pepperoni"/> Pepperoni
+        </label><br>
+        
+        <label class="tbd">
+        <input class="meats" type="checkbox" name="meat"  value="Sausage"/> Sausage
+        </label><br>
+        
+        <label class="tbd">
+        <input class="meats" type="checkbox" name="meat"  value="Anchovy"/> Anchovy
+        </label><br>
+
+<label class="control control--checkbox">
+<input class="meats" type="checkbox" name="meat"  value="Chicken"/> Chicken
+</label><br>
+                
+<label class="control control--checkbox">
+<input class="meats" type="checkbox" name="meat"  value="Turkey"/> Turkey
+</label>
+</fieldset>    
+
+
+
+<!-- Toppings selection -->
+<fieldset class="categoryColor">
+<legend>"Vegetables"</legend>
+         
+<label class="tbd">
+        <input class="specialties" type="checkbox" name="specialty"  value="Insects"/> Insects (in-season)
+        </label><br>
+        
+        <label class="tbd">
+        <input class="specialties" type="checkbox" name="specialty"  value="Catnip"/> Catnip
+        </label><br>
+        
+        <label class="tbd">
+        <input class="specialties" type="checkbox" name="specialty"  value="Goldfish"/> Smoked Goldfish
+        </label><br>
+        
+        <label class="tbd">
+        <input class="specialties" type="checkbox" name="specialty"  value="Wings"/> Wings (bone-in )
+        </label><br>
+        
+        <label class="tbd">
+        <input class="specialties" type="checkbox" name="specialty"  value="Rabbit"/> Rabbit
+        </label><br>
+        
+        <label class="tbd">
+        <input class="specialties" type="checkbox" name="specialty"  value="Bacon Strips"/> Bacon Strips
+        </label><br>
+        
+        <label class="tbd">
+        <input class="specialties" type="checkbox" name="specialty"  value="Squirrel"/> Ground Squirrel
+        </label><br>
+        
+        <label class="tbd">
+        <input class="specialties" type="checkbox" name="specialty"  value="Eggs"/> Bird Eggs (in-season)
+         </label>                
+</fieldset>    
+
+<!-- Total -->
+
+
+</fieldset>
+</form>
+
+
+<div class="Receipt">
+    
+<p><h2>Your Receipt.</h2></p>
+        
+<p><h3> Pizza size:</h3></p>
+        
+<p><h3> Crust:</h3></p>
+        
+ <p><h3> Sauce:</h3></p>
+        
+ <p><h3> Cheese:</h3></p>
+        
+ <p><h3> Meat:</h3></p>
+        
+<p><h3> Specialties:</h3></p>
+        
+<p><h2>Total:</h2></p>
+        
+</div>
+
+      
+
+</body>
+
+<footer>
+    <br>
+    <br>
+    <br>
+
+        <div>
+        <HR color="darkblue" width="60%">
+
+        <p>Made for cats, by cool cats. &trade;   &nbsp &nbsp  | &nbsp &nbsp  &copy2017. All rights reserved.</p>
+        </div>
+        </footer>
+
+</html>

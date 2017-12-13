@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+        <head>
+                <meta name="viewport" content="width=device-width, initial-scale=1">
+                <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+                <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+                <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+                </head>
+
+    <style>
+        
+fieldset {
+  margin-left: 2px; 
+  margin-right: 2px;
+  border: groove 2px ThreeDFace;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+legend {
+  padding-left: 2px; padding-right: 2px;
+}
+</style>
+
+
+
+
+<br>
+<br>
+<div container>
+  <p>
+    writing something here to see if it will supercede the header 
+    <!-- No idea where this came from or where the styling is not allowing this to show.  Love how the buttons and boxes click and change color ... just can't replicate it aargh.  -->
+  </p>
+</div>
+<br>
+<br>
+
+<div data-role="page">
+        <div data-role="header">
+        <h1>Radio Buttons and Checkboxes</h1>
+        </div>
+      
+        <div data-role="main" class="ui-content">
+          <form method="post" action="/action_page_post.php">
+            <fieldset data-role="controlgroup" data-type="horizontal">
+            <legend>Choose your gender:</legend>
+              <label for="male">Male</label>
+              <input type="radio" name="gender" id="male" value="male">
+              <label for="female">Female</label>
+              <input type="radio" name="gender" id="female" value="female">
+            </fieldset>
+      <br>
+            <fieldset data-role="controlgroup" data-type="horizontal">
+              <legend>Choose as many favorite colors as you'd like:</legend>
+                <label for="red">Red</label>
+                <input type="checkbox" name="favcolor" id="red" value="red">
+
+                <label for="green">Green</label>
+                <input type="checkbox" name="favcolor" id="green" value="green">
+
+                <label for="blue">Blue</label>
+                <input type="checkbox" name="favcolor" id="blue" value="blue">
+
+                <label for="yellow">Yellow</label>
+                <input type="checkbox" name="favcolor" id="yellow" value="yellow">
+
+                <label for="orange">Orange</label>
+                <input type="checkbox" name="favcolor" id="orange" value="orange">
+
+                <label for="purple">Purple</label>
+                <input type="checkbox" name="favcolor" id="purple" value="purple">
+
+                <label for="white">White</label>
+                <input type="checkbox" name="favcolor" id="white" value="white">
+
+                <label for="black">Black</label>
+                <input type="checkbox" name="favcolor" id="black" value="black">
+                
+            </fieldset>
+<br>
+            <fieldset data-role="controlgroup" data-type="horizontal">
+                <legend>Choose as many toppings as you'd like:</legend>
+
+                <label for="bird">Bird</label>
+                <input type="checkbox" name="topping" id="bird" value="bird">
+
+                  <label for="dog">Dog</label>
+                  <input type="checkbox" name="topping" id="dog" value="dog">
+  
+                  <label for="fish">Fish</label>
+                  <input type="checkbox" name="topping" id="fish" value="fish">
+  
+                  <label for="rabbit">Rabbit (in-season)</label>
+                  <input type="checkbox" name="topping" id="rabbit" value="rabbit">
+  
+                  <label for="snake">Snake</label>
+                  <input type="checkbox" name="topping" id="snake" value="snake">
+  
+                  <label for="frog">Frog</label>
+                  <input type="checkbox" name="topping" id="frog" value="frog">
+  
+                  <label for="snail">Snail</label>
+                  <input type="checkbox" name="topping" id="snail" value="snail">
+  
+                  <label for="spider">Spider</label>
+                  <input type="checkbox" name="topping" id="spider" value="spider">
+                  
+              </fieldset>
+
+
+
+
+
+
+              <br>
+            <input type="submit" data-inline="true" value="Submit">
+          </form>
+        </div>
+      </div>
+
+      <br>
+      <br>
+      <br>
+      <br>
+      
+
+</body>
+</html>

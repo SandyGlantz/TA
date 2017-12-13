@@ -1,0 +1,50 @@
+/* Pizza project css here ...   */
+
+body  {
+  padding-top: 200px;
+}
+
+
+
+
+/*  flex box from w3school tryIt */
+
+@import "compass/css3"; /* Doc: this CSS3 module provides cross-browser mixins for CSS properties introduced in CSS3 */
+
+.flex-container {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  
+  -webkit-flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+.flex-item {
+  background: darkcyan;
+  padding: 5px;
+  min-width: 50px;
+  max-width: 250px;
+  min-height: 250px;
+  max-height: 500px;
+  margin-top: 10px;
+  
+  line-height: auto;
+  color: white;
+  font-weight: bold;
+  font-size: 1.5em;
+  text-align: center;
+}
+/*  end flex box */
+
+.order  {
+  background-color: pink;
+  text-align: center;
+
+}

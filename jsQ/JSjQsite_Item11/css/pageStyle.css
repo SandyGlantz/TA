@@ -1,0 +1,145 @@
+/* ========== General ========== */
+.icons  {
+    display: block;    
+    padding: 10px;
+    margin: auto;
+}
+
+
+/*======== Class for font colors ==== */
+
+.leftBlue  {
+    color:lightskyblue;
+    font-weight: bold;
+}
+
+.rightOrange   {
+    color:coral;
+    font-weight: bold;
+} 
+
+.headerYellow  {
+    color: yellow;
+    font-weight: bold;
+}
+
+/* May want to add non-bold class for Human Section ?? ==== */
+
+
+.back2top  {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12pt;
+    text-align: center;
+    text-decoration: none;
+}
+
+
+/* ========== Home ========== */
+.container  {
+    background-color: black;
+    text-align: center;
+    text-decoration: none;
+}
+
+.docSandy  {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24pt;
+}
+
+.DevMarkSolve  {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18pt;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover  {
+    color:blue;
+} 
+
+
+
+/* ========== Dev section ========== */
+
+.container-dev  {
+    background-color:#202020;
+    text-align: center;
+}
+
+.DevSection  {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16pt;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover  {
+    color:blue;
+} 
+
+
+
+/* ========== Mark section ========== */
+
+.container-mark  {
+    background-color: black;
+    text-align: center;
+    text-decoration: none;
+}
+
+.MarkSection {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16pt;
+    text-decoration: none; 
+    font-weight: bold;
+}
+
+/* ========== Portfolio ========== */
+.container-portfolio  {
+    background-color:#303030;
+    text-align: center;
+}
+
+.PortfolioSection  {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16pt;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+/* ========== Human ========== */
+.container-human  {
+    background-color:black;
+    text-align: left;
+    line-height: 200%;
+    padding-left: 80px;
+    padding-right: 80px;
+}
+
+.HumanSection  {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16pt;
+    text-decoration: none;
+}
+
+
+
+
+.container-icons2  {
+    background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14pt;
+    text-decoration: none;
+    text-align: left;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 0px;
+    margin-left: auto;
+}
+
+.container-icons2 img  {
+    margin-left: 50px;
+    float: left;
+}

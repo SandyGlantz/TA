@@ -1,0 +1,459 @@
+<!-- 
+    Note:  the version in the video lesson has *significant* differences from the supplied base code.  These changes are in **addition** to the discrepancies between the original version and and the original video lesson.  
+
+    Great QA practice!! ;-)
+-->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--  ===== Required meta tags =====  -->
+    <title>Academy Cinemas | sg</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!--  ===== Bootstrap CSS =====  -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="./cssVjsQ/cinema_style.css">
+</head>
+
+<body id="home">
+    <!--  ===== Page Content starts here =====  -->
+    <div class="container">
+
+
+
+        <!--  ===== navigation =====  -->
+
+        <nav class="navbar navbar-toggleable-md fixed-top navbar-light" style="background-color: #e3f2fd;">
+
+
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                     <span class="navbar-toggler-icon"></span>
+                </button>
+
+            <!--  ===== Image only for nav bar/home =====   -->
+            <a class="navbar-brand" href="#">
+                        <img src="./imgVjsQ/movie_logo.gif" width="60" height="58" alt="logo">
+                    </a>
+            <!--  ===== / Image only for nav bar/home =====   -->
+
+
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
+                        <!-- sr=screen reader (for visually impaired)-->
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#showtimes">Showtimes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#deals">Deals</a>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0 hidden-sm-down">
+                    <input class="form-control mr-sm-2" type="text" placeholder="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </form>
+            </div>
+        </nav>
+
+        <!--  ===== END navigation =====  -->
+
+
+
+        <!--  ===== Jumbotron  (Big header) =====  -->
+        <div class="jumbotron jumbotron-fluid text-center bg-info mt-5 hidden-sm-down">
+            <!-- bg=background; 
+                info=bootstrap color call for light blue 
+                m=margin, t=top         -->
+
+            <!--  ===== line above diff from TA 1st/original version
+     	<div class="jumbotron jumbotron-fluid text-center bg-info mt-4 hidden-md-down">    
+=====  -->
+
+            <div class="container">
+                <h1 class="display-2">Academy Cinemas</h1>
+                <p class="lead">Sit back, relax, and enjoy the show ...
+                </p>
+            </div>
+        </div>
+        <!--  ===== END Jumbotron  (Big header) =====  -->
+
+
+
+        <!--  ===== Main Content =====  -->
+
+        <div class="container my-5">
+            <div class="row">
+                <div class="col-md-4 pt-5" id="about">
+                    <!--  ===== line above diff from TA 1st/original version
+                <div class="col-md-4 mt-5 px-2">
+                    mt= margin top
+                    my= margin y-axis
+                    px= padding x-axis
+                    pt= padding top           
+ =====  -->
+
+                    <h3>About Academy Cinemas</h3>
+                    <img class="img-fluid" src="./imgVjsQ/pdx.jpg" alt="Portland" />
+                    <p>Located in Portland, Oregon's Pearl District</p>
+                    <p>Our reels have been spinning since 1959. Showing our guests a great time is our passion and seeing their
+                        smiles is our pleasure!</p>
+                </div>
+                <div class="col-md-4 pt-5">
+                    <!--  ===== line above diff from TA  1st/original version
+                <div class="col-md-4 mt-5 px-2">
+ =====  -->
+                    <h3>Accommodations</h3>
+                    <p>All of our auditoriums are equipped with brand new Dolby 3D&reg; sound systems!</p>
+                    <p>Relax in our, extra-wide, plush cushioning recliners. Seating is on first-come-first-served basis. Our
+                        seating arrangement is disability friendly &#9855;.</p>
+                    <p>Our auditoriums are climate controlled to approximately 72&deg; year-round.</p>
+                </div>
+                <div class="col-md-4 pt-5">
+                    <!--  ===== line above diff from TA 1st/original version
+                <div class="col-md-4 mt-5 px-2">
+ =====  -->
+                    <h3>Showtimes</h3>
+                    <ul class="list-group">
+                        <li class="list-group-item">
+                            <a class="nav-link" href="#showtimes">Kong: Skull Island</a>
+                        </li>
+                        <li class="list-group-item">
+                            <a class="nav-link" href="#showtimes">Ghost in the Shell</a>
+                        </li>
+                        <li class="list-group-item">
+                            <a class="nav-link" href="#showtimes">Beauty and the Beast</a>
+                        </li>
+                        <li class="list-group-item">
+                            <a class="nav-link" href="#showtimes">Life (2017)</a>
+                        </li>
+                        <li class="list-group-item">
+                            <a class="nav-link" href="#showtimes">Logan (2017)</a>
+                        </li>
+                        <li class="list-group-item">
+                            <a class="nav-link" href="#showtimes">Power Rangers</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!--  ===== END  Main Content =====  -->
+
+
+
+
+        <!--  ===== Showtimes (Cards) =====  -->
+
+        <!-- I changed "card-group" to "card-column" to get them to wrap instead of going off the screen -->
+        <div class="card-columns" id="showtimes">
+            <!--  ===== line above diff from TA 1st/original version
+		<div class="card-group" id="showtimes">
+ =====  -->
+
+            <div class="card">
+                <img class="card-img-top" src="./imgVjsQ/kongskullisland.jpg" alt="Kong">
+                <div class="card-block">
+                    <h4 class="card-title">Kong: Skull Island</h4>
+                    <!-- Left in copy (<p>)as an experiment instead of all times -->
+                    <p class="card-text">This movie opens Friday!</p>
+
+                    <!-- adding "-info" creates the color of the badge -->
+                    <span class="badge badge-pill badge-info">12:00pm</span>
+                    <span class="badge badge-pill badge-info">4:15pm</span>
+                    <span class="badge badge-pill badge-info">9:00pm</span>
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted">Last updated 3 mins ago</small>
+                </div>
+            </div>
+
+
+            <div class="card">
+                <img class="card-img-top" src="./imgVjsQ/ghostintheshell.jpg" alt="Ghost">
+                <div class="card-block">
+                    <h4 class="card-title">Ghost in the Shell</h4>
+                    <!-- Left in copy (<p>)as an experiment instead of all times -->
+                    <p class="card-text">This movie opens Friday!</p>
+
+                    <!-- adding "-info" creates the color of the badge -->
+                    <span class="badge badge-pill badge-info">2:00pm</span>
+                    <span class="badge badge-pill badge-info">6:15pm</span>
+                    <span class="badge badge-pill badge-info">10:00pm</span>
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted">Last updated 3 mins ago</small>
+                </div>
+            </div>
+
+
+            <div class="card">
+                <img class="card-img-top" src="./imgVjsQ/beautyandthebeast.jpg" alt="Beauty">
+                <div class="card-block">
+                    <h4 class="card-title">Beauty and the Beast</h4>
+                    <!-- Left in copy (<p>)as an experiment instead of all times -->
+                    <p class="card-text">This movie opens Friday!</p>
+
+                    <!-- adding "-info" creates the color of the badge -->
+                    <span class="badge badge-pill badge-info">12:00pm</span>
+                    <span class="badge badge-pill badge-info">2:15pm</span>
+                    <span class="badge badge-pill badge-info">7:00pm</span>
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted">Last updated 3 mins ago</small>
+                </div>
+            </div>
+
+
+            <div class="card">
+                <img class="card-img-top" src="./imgVjsQ/life.jpg" alt="Life">
+                <div class="card-block">
+                    <h4 class="card-title">Life</h4>
+                    <!-- Left in copy (<p>)as an experiment instead of all times -->
+                    <p class="card-text">This movie ends Thursday!!</p>
+
+                    <!-- adding "-info" creates the color of the badge -->
+                    <span class="badge badge-pill badge-info">12:00pm</span>
+                    <span class="badge badge-pill badge-info">2:15pm</span>
+                    <span class="badge badge-pill badge-info">7:00pm</span>
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted">Last updated 3 mins ago</small>
+                </div>
+            </div>
+
+
+            <div class="card">
+                <img class="card-img-top" src="./imgVjsQ/logan.jpg" alt="Logan">
+                <div class="card-block">
+                    <h4 class="card-title">Logan</h4>
+                    <!-- Left in copy (<p>)as an experiment instead of all times -->
+                    <p class="card-text">This movie ends Thursday!!</p>
+
+                    <!-- adding "-info" creates the color of the badge -->
+                    <span class="badge badge-pill badge-info">12:00pm</span>
+                    <span class="badge badge-pill badge-info">2:15pm</span>
+                    <span class="badge badge-pill badge-info">7:00pm</span>
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted">Last updated 3 mins ago</small>
+                </div>
+            </div>
+
+
+            <div class="card">
+                <img class="card-img-top" src="./imgVjsQ/powerrangers.jpg" alt="Power Rangers">
+                <div class="card-block">
+                    <h4 class="card-title">Power Rangers (2017)</h4>
+                    <!-- Left in copy (<p>)as an experiment instead of all times -->
+                    <p class="card-text">This movie ends Thursday!!</p>
+
+                    <!-- adding "-info" creates the color of the badge -->
+                    <span class="badge badge-pill badge-info">12:00pm</span>
+                    <span class="badge badge-pill badge-info">2:15pm</span>
+                    <span class="badge badge-pill badge-info">7:00pm</span>
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted">Last updated 3 mins ago</small>
+                </div>
+            </div>
+        </div>
+
+        <!--  ===== END Showtimes =====  -->
+
+
+
+        <!--  ===== Jumbotron 2 heading (new; not in 1st/original) =====  -->
+
+        <div class="jumbotron jumbotron-fluid bg-info mt-5 text-center">
+            <div class="container">
+                <h1 class="display-4 hidden-sm-down" 
+                    style="
+                    color:#fff; 
+                    font-family:Roboto;
+                    font-weight:900;
+                    text-transform: uppercase;
+                    ">*** Movie Deals ***</h1>
+                <p class="lead">Check out our monthly specials!</p>
+                <!-- movie deals (intentionally used different button than video called for-->
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#register">Click for BIG Savings</button>
+                <!-- END movie deals -->
+            </div>
+        </div>
+
+       <!--  ===== END Jumbotron 2 =====  -->
+
+
+
+
+        <!--  ===== Sign-up Form *(**NEW***) =====   -->
+
+        <div class="row">
+            <div class="container text-center col-md-6" id="deals">
+                <div class="container text-center">
+                    <h2 class="display-8 my-5 text-primary">Movie news delivered to you - <br>Sign up now!</h2>
+                    <div class="input-group mb-5 input-group-sm">
+                        <input type="text" class="form-control" placeholder="Email">
+                        <span class="input-group-btn">
+                            <button type="button" class="btn btn-secondary btn-info popover-dismiss" data-container="body" data-toggle="popover" data-placement="top" data-content="Customizable movie, and movie star, news.">
+                                    Sign up
+                                  </button>
+                       </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <!--  ===== END NEW Sign-up Form =====  -->
+
+
+
+
+    <!--  ===== Sign-up Form ORIGINAL =====   (removed closing comment "--etc." HERE)
+
+        <div class="container py-4 text-center col-md-6">
+            <form>
+                <div class="form-group row">
+                    <h2 class="display-8 my-5 text-primary">Get special offers delivered to your inbox!</h2>
+                    <!-- "primary" is Bstrap dark blue call -->
+
+    <!--  ===== line above diff from TA 1st/original version
+		<h1 class="display-5 my-5 text-primary">Stay current on the movies!</h1>
+ =====  (removed closing comment "--etc." HERE)
+
+                    <div class="col-sm-12 text-center">
+<!--  ===== line above diff from TA 1st/original version
+		        <div class="col-sm-12">
+ =====   (removed closing comment "--etc." HERE)
+
+                        <input type="email" class="form-control form-control-lg" id="lgFormGroupInput" placeholder="you@email.com">
+<!--  ===== line above diff from TA 1st/original version
+		        class="form-control form-control-lg mr-auto" 
+ =====   (removed closing comment "--etc." HERE)
+
+            <button type="button" class="btn btn-outline-primary mt-4 mr-auto">Sign-up</button>
+                    </div>
+                </div>
+            </form> 
+        </div>
+
+        <!--  ===== END ORIGINAL Sign-up Form =====  -->
+
+
+
+    <!--  ===== Form Modal =====  -->
+
+    <div class="modal fade" id="register">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title">Register here for our famous Movie Specials</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <p>Get big savings on tickets, and be the first to find out about the freebies and other promotional giveaways!</p>
+
+                <form>
+                  <fieldset class="form-group">
+                      <label for="firstname">First Name: </label>
+                      <input type="text" class="form-control"  id="firstname" placeholder="First name here">
+                  </fieldset>
+
+                  <fieldset class="form-group">
+                        <label for="lastname">Last Name: </label>
+                        <input type="text" class="form-control"  id="lastname" placeholder="Last Name here">
+                    </fieldset>
+
+                    <fieldset class="form-group">
+                        <label for="email">Email: </label>
+                        <input type="text" class="form-control"  id="email" placeholder="Email here">
+                    </fieldset>                   
+
+                    <fieldset class="form-group">
+                        <label for="password">Password: </label>
+                        <input type="text" class="form-control"  id="password" placeholder="Password here">
+                    </fieldset>
+                </form>
+
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-primary">Save changes</button>
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+    <!--  ===== END Form Modal =====  -->
+
+
+
+    <!--  ===== Footer =====  -->
+
+    <!--  ===== this line not in my code or the (1st/original) video:
+        <div class="container">
+=====  -->
+
+    <ul class="nav" id="deals">
+        <!--  ===== line above diff from TA 1st/original version
+				<ul class="nav nav-inline" id="deals">
+ =====  -->
+
+        <li class="nav-item">
+            <small><a class="nav-link active" href="#">Movie Rewards</a></small>
+        </li>
+        <li class="nav-item">
+            <small><a class="nav-link" href="#">Movies@news.org</a></small>
+        </li>
+        <li class="nav-item">
+            <small><a class="nav-link" href="#">Info@AcademyCinemas</a></small>
+        </li>
+        <li class="nav-item">
+            <small class="nav-link">&copy;2017 Academy Cinemas&reg;</small>
+        </li>
+    </ul>
+
+    <!--  ===== END Footer =====  -->
+
+
+
+
+
+
+    </div>
+    <!--  ===== Page Content ENDS here =====  -->
+
+
+    <!--  ===== jQuery first, then Tether, then Bootstrap JS.  =====  -->
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn"
+        crossorigin="anonymous"></script>
+
+        <!-- Bootstrap jQuery dismissable pop-over from email sign-up -->
+                <script>
+                $('.popover-dismiss').popover({
+                  trigger: 'hover'
+                 })
+                 // the original call was "focus" insteasd of "hover".  Focus (click) did NOT show on Safari, but hover did.  Focus worked on Chrome FWIW
+                </script>
+
+</body>
+
+</html>
