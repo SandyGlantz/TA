@@ -1,0 +1,51 @@
+TextWindow.Title = "Small Basic Section 20 Exercise 1"
+
+'Trying to save this to GitHub folder instead of Git
+
+''Note to instructor:  
+'I needed to enter, clear, and then re-enter the background color (on my Mac) ...
+'...for it to actually show a blue screen and not just a highlight over the text. 
+
+
+TextWindow.BackgroundColor = "DarkBlue"
+TextWindow.Clear()
+TextWindow.Left = 2
+TextWindow.Top = 2
+TextWindow.BackgroundColor = "DarkBlue"
+TextWindow.ForegroundColor = "Yellow"
+TextWindow.CursorLeft = 3
+TextWindow.CursorTop = 2
+TextWindow.Pause()
+
+
+TextWindow.CursorLeft = 3
+TextWindow.WriteLine("Exercise 1: Create a program that returns the smaller of two numbers")
+Program.Delay(2000)
+TextWindow.CursorLeft = 3
+TextWindow.Write("Type in a number, please:  ")
+First_Number = TextWindow.ReadNumber()
+TextWindow.CursorLeft = 3
+TextWindow.WriteLine("That's a great first number!")
+Program.Delay(2200)
+TextWindow.CursorLeft = 3
+TextWindow.Write("Hmmm... Guess I need another number to do the exercise.  So type in another number, please:  ")
+Second_Number = TextWindow.ReadNumber()
+
+
+If (First_Number = Second_Number) Then
+  TextWindow.CursorLeft = 3
+  TextWindow.WriteLine("I guess I wasn't clear.  Please enter two *different* numbers.")
+  TextWindow.Pause()
+  TextWindow.CursorLeft = 3
+  TextWindow.Write("Please enter a new number:  ")
+  Second_Number = TextWindow.Read()
+  EndIf
+
+
+If (First_Number < Second_Number) Then
+  Smaller = First_Number
+Else
+  Smaller = Second_Number
+EndIf
+  TextWindow.CursorLeft = 3
+  TextWindow.WriteLine("The smaller number is:  " + Smaller)

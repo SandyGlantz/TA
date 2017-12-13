@@ -1,0 +1,19 @@
+FINAL ESSAY:
+ An essay explaining how the program I wrote in Exercise 5 contained the five elements of a program.
+
+
+1. Entrance (aka, First Instruction)
+  The “entrance” in the program was to name the window, and establish the program (/language) as a GUI (GraphicsWindow).
+
+2. Control/branching (aka, If/Then)
+  The initial branching was which button the user clicked.  
+  If the user clicked the button (to attempt) the action - the second branching determined whether or not the user action was within the pre-determined allowance.
+
+3. Variables (Tracking/managing changing values)   This was the part of the program which determined what the current time of the request was, and if that time was within the allowable action period.
+
+4. Sub program (Program within a program)
+  One sub program was the part of the program which created and copied the file (and inserted a time stamp to allow all parties to see the last change).  Other subs were the screens shown, and what each button did.
+
+5. Exit 
+  The program ended when the user was done and pressed the “Quit” button - available on every screen shown.  There were two outcomes based on the London conditional (if the office was open or not) 
+

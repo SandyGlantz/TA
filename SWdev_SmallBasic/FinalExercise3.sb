@@ -1,0 +1,34 @@
+
+'  Not able to save to a C Drive/Desktop because it defaults and copies to my Mac Desktop. 
+'  Tried saving to C Drive by using .SB Saved Files - failed
+'  Went with Docs instead of desktop location to keep things clean.
+
+FilePath = "\\Mac\Home\Documents\SmallBasicFiles\PracticeFile.txt"
+TextWindow.WriteLine("Write Content = " + File.WriteLine(FilePath, 1, "Shakespeare was a great writer."))
+
+'  *** EVERY time you run [append...] it adds the line(s) below the original entries.
+'  Would be useful for time-stamping future entries.
+'  Lines below were prior history, saving info for future use:
+'  TextWindow.WriteLine("Append Content = " + File.AppendContents(FilePath, "He wrote many plays I like."))
+'  TextWindow.WriteLine("Append Content = " + File.AppendContents(FilePath, "Third Line Test."))
+
+
+TextWindow.WriteLine("Read Content = " + File.ReadContents(FilePath))
+TextWindow.Pause()
+
+
+
+sourceFilePath = "\\Mac\Home\Documents\SmallBasicFiles\PracticeFile.txt"
+destinationFilePath = "\\Mac\Home\Documents\SmallBasicFiles\Fold1wFile\"
+directoryPath = "\\Mac\Home\Documents\SmallBasicFiles\"
+
+
+'  Note to self:  if file exists in same location with same name it is written over
+TextWindow.WriteLine("Copy file Operation:" + File.CopyFile(sourceFilePath, destinationFilePath))
+
+
+'  This confirms copy & move showing paths of both files
+TextWindow.WriteLine("Files in the directory: " + File.GetFiles(directoryPath))
+
+
+

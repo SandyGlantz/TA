@@ -1,0 +1,67 @@
+TextWindow.Title = "Small Basic Section 20 Exercise 4"
+
+
+TextWindow.BackgroundColor = "DarkBlue"
+TextWindow.Clear()
+TextWindow.Left = 2
+TextWindow.Top = 2
+TextWindow.BackgroundColor = "DarkBlue"
+TextWindow.ForegroundColor = "Yellow"
+TextWindow.CursorTop = 2
+TextWindow.CursorLeft = 3
+TextWindow.Pause()
+TextWindow.WriteLine("")
+
+
+TextWindow.CursorLeft = 3
+TextWindow.WriteLine("Exercise 4: Create a program that copies file if London office closed ...")
+Program.Delay(1000)
+TextWindow.WriteLine("")
+TextWindow.CursorLeft = 3
+TextWindow.WriteLine("When you press ENTER the file will copy IF London's office is closed. ")
+Program.Delay(1000)
+TextWindow.WriteLine("")
+TextWindow.WriteLine("")
+TextWindow.Pause()
+
+
+
+
+
+'London Office conditional:
+
+TextWindow.CursorLeft = 10
+
+If Clock.Hour >= 1 And Clock.Hour < 13 Then
+   TextWindow.WriteLine("File can not be copied because the London Office is open") 
+  
+ElseIf Clock.Hour = 13 And Clock.Minute = 0 Then
+  TextWindow.WriteLine("File can not be copied because the London Office is open")
+
+Else 
+  FilePath = "\\Mac\Home\Documents\SmallBasicFiles\Fold1wFile\LondonUpdates.txt"
+  sourceFilePath = "\\Mac\Home\Documents\SmallBasicFiles\Fold1wFile\LondonUpdates.txt"
+  destinationFilePath = "\\Mac\Home\Documents\SmallBasicFiles\Fold2noFile\"
+  directoryPath = "\\Mac\Home\Documents\SmallBasicFiles\Fold2noFile\"
+   
+TextWindow.WriteLine("Write Content = " + File.WriteLine(FilePath, 1, "Updated file for London office chaps."))
+TextWindow.WriteLine("Append Content = " + File.AppendContents(FilePath, "Last Saved " + Clock.Time))
+TextWindow.WriteLine("Read Content = " + File.ReadContents(FilePath))
+
+'  Note to self:  if file exists in same location with same name it is written over
+     TextWindow.WriteLine("Copy file Operation:" + File.CopyFile(sourceFilePath, destinationFilePath))
+     TextWindow.WriteLine("The London Office is closed, and your file has been copied.")
+   EndIf
+   
+   
+  TextWindow.WriteLine("")
+  TextWindow.WriteLine("")
+  Program.Delay(1000)
+  TextWindow.CursorLeft = 3
+
+
+
+
+
+
+

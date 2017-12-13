@@ -1,0 +1,76 @@
+TextWindow.Title = "Small Basic Section 20 Exercise 2"
+
+
+'Note to instructor:  
+'I needed to enter, clear, and then re-enter the background color (on my Mac) ...
+'...for it to actually show a blue screen and not just a highlight over the text. 
+
+
+TextWindow.BackgroundColor = "DarkBlue"
+TextWindow.Clear()
+TextWindow.Left = 2
+TextWindow.Top = 2
+TextWindow.BackgroundColor = "DarkBlue"
+TextWindow.ForegroundColor = "Yellow"
+TextWindow.CursorTop = 2
+TextWindow.CursorLeft = 3
+TextWindow.Pause()
+TextWindow.WriteLine("")
+
+
+TextWindow.CursorLeft = 3
+TextWindow.WriteLine("Exercise 2: Create a program that determines if London and NYC branch offices are open, based on Portland HQ time ...")
+Program.Delay(1000)
+TextWindow.WriteLine("")
+TextWindow.CursorLeft = 3
+TextWindow.WriteLine("Operational status for each office: ")
+Program.Delay(1000)
+TextWindow.WriteLine("")
+TextWindow.WriteLine("")
+
+'Used these in an earlier version set-up - leaving in for now in case needed later
+pdxHour = Clock.Hour
+pdxMinute = Clock.Minute
+nycTime = Clock.Hour + 3
+londonTime = Clock.Hour + 8
+
+'Portland Office
+TextWindow.CursorLeft = 10
+If Clock.Hour >= 9 And Clock.Hour < 21  Then
+  TextWindow.WriteLine("The Portland Office is open.")
+ElseIf Clock.Hour = 21 And Clock.Minute = 0 Then
+  TextWindow.WriteLine("The Portland Office is open.")
+Else 
+  TextWindow.WriteLine("The Portland Office is closed.")
+  EndIf
+Program.Delay(1000)  
+TextWindow.WriteLine("")
+
+
+'NYC Office
+TextWindow.CursorLeft = 10
+If Clock.Hour >= 6 And Clock.Hour < 18   Then
+  TextWindow.WriteLine("The New York City Office is open.")
+ElseIf Clock.Hour = 18 And Clock.Minute = 0 Then
+  TextWindow.WriteLine("The New York City Office is open.")
+Else 
+  TextWindow.WriteLine("The New York City Office is closed.")
+  EndIf
+Program.Delay(1000)   
+TextWindow.WriteLine("")
+
+
+'London Office
+TextWindow.CursorLeft = 10
+If Clock.Hour >= 1 And Clock.Hour < 13 Then
+  TextWindow.WriteLine("The London Office is open.")
+ElseIf Clock.Hour = 13 And Clock.Minute = 0 Then
+  TextWindow.WriteLine("The London Office is open.")
+Else 
+  TextWindow.WriteLine("The London Office is closed.")
+EndIf
+  TextWindow.WriteLine("")
+  TextWindow.WriteLine("")
+  Program.Delay(1000)
+  TextWindow.CursorLeft = 3
+
