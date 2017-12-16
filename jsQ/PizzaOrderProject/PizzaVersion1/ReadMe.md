@@ -2,7 +2,7 @@ Pizza Ordering Project
 
 GitHub preview system doesn't pick up the fonts right :-/
 but rather than download, the page preview is here:
-http://htmlpreview.github.com/?https://github.com/SandyGlantz/TA/blob/f7a4db2b4ffebd4602d30a6407ab17819e939f73/jsQ/PizzaOrderProject/PizzaVersion1/PFC_index.html
+http://htmlpreview.github.com/?https://github.com/SandyGlantz/TA/blob/master/jsQ/PizzaOrderProject/PizzaVersion1/PFC_index.html
 
 Requirement was to develop a working html-css-js order form which included an (itemized) receipt (on screen) and total. We were free to add any creative, as long as the ordering prerequisites were met.
 
