@@ -6,8 +6,8 @@ http://htmlpreview.github.com/?https://github.com/SandyGlantz/TA/blob/master/jsQ
 
 Requirement was to develop a working html-css-js order form which included an (itemized) receipt (on screen) and total. We were free to add any creative, as long as the ordering prerequisites were met.
 
-Accidentally ran across how many pictures there are of cats and pizza ... even a Japanese commercial campaign for Pizza Hut where the staff is all cats!
-On that note: the images are pulled from the Internet and I'm sure some (cough ... ahem ... Pizza Hut) might not be inclined to allow me to use them - even with attribution.  The images are JUST FOR FUN and for personal use.  I do know that any real client project would require attribution and permissions (and probably it's own photo shoot).
+Accidentally discovered how many pictures there are of cats and pizza ... even a Japanese commercial campaign for Pizza Hut where the staff is all cats!
+On that note: the images are pulled from the Internet and I'm sure some (cough ... ahem ... Pizza Hut) might not be inclined to allow me to use them - even with attribution.  The images are JUST FOR FUN and for personal use.  I do know a real client project would require attribution and permissions (and probably it's own photo shoot).
 
 
 
