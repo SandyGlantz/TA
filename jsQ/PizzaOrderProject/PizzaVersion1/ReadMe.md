@@ -9,7 +9,11 @@ On that note: the images are pulled from the Internet and I'm sure some (cough .
 
 Screen shots:
 
-[![Home screenshot](/path/to/img.png?raw=true)][/Users/sanmb/Documents/TA/jsQ/PizzaOrderProject/PizzaVersion1/img/screenshots/CustomerScreen.png]
+![Alt text](img/screenshots/CustomerScreen.png?raw=true "Customer page")
+
+[Screen of Home Page](img/screenshots/CustomerScreen.png)
+
+(Home screenshot](/path/to/img.png?raw=true)][/Users/sanmb/Documents/TA/jsQ/PizzaOrderProject/PizzaVersion1/img/screenshots/CustomerScreen.png]
 
 [Screen of Home Page](img/screenshots/CustomerScreen.png)
 
