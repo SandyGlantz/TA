@@ -8,7 +8,10 @@ Accidentally discovered how many pictures there are of cats and pizza ... even a
 On that note: the images are pulled from the Internet and I'm sure some (cough ... ahem ... Pizza Hut) might not be inclined to allow me to use them - even with attribution.  The images are JUST FOR FUN and for personal use.  I do know a real client project would require attribution and permissions (and probably it's own photo shoot).
 
 Screen shots:
-/Users/sanmb/Documents/TA/jsQ/PizzaOrderProject/PizzaVersion1/img/screenshots/CustomerScreen.png
+
+[![Home screenshot](/path/to/img.png?raw=true)][/Users/sanmb/Documents/TA/jsQ/PizzaOrderProject/PizzaVersion1/img/screenshots/CustomerScreen.png]
+
+[Screen of Home Page](img/screenshots/CustomerScreen.png)
 
 
 
