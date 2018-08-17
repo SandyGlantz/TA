@@ -7,15 +7,21 @@ Requirement was to develop a working html-css-js order form which included an (i
 Accidentally discovered how many pictures there are of cats and pizza ... even a Japanese commercial campaign for Pizza Hut where the staff is all cats!
 On that note: the images are pulled from the Internet and I'm sure some (cough ... ahem ... Pizza Hut) might not be inclined to allow me to use them - even with attribution.  The images are JUST FOR FUN and for personal use.  I do know a real client project would require attribution and permissions (and probably it's own photo shoot).
 
+I used to have a GitHub preview link set up for the working website - but they seem to have disabled that feature ( the dreaded - what?? it worked last week!) ... so I've included some screen shots in the meantime until I figure out a work-around. There were some fun mouse indicator treatments and even a meow when you paced your order ...
+
 Screen shots:
+
+![Alt text](img/screenshots/HomeScreen.png?raw=true "Home page")
+
+![Alt text](img/screenshots/StaffScreen.png?raw=true "Staff page")
+
+![Alt text](img/screenshots/OrderScreen.png?raw=true "Order page")
 
 ![Alt text](img/screenshots/CustomerScreen.png?raw=true "Customer page")
 
-[Screen of Home Page](img/screenshots/CustomerScreen.png)
 
-(Home screenshot](/path/to/img.png?raw=true)][/Users/sanmb/Documents/TA/jsQ/PizzaOrderProject/PizzaVersion1/img/screenshots/CustomerScreen.png]
 
-[Screen of Home Page](img/screenshots/CustomerScreen.png)
+
 
 
 
